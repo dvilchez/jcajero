@@ -9,8 +9,7 @@ public class CanalDeComunicacionConElBancoTest {
 
 	@Test
 	public void crearCanalDeComunicacion() throws Exception {
-		CanalDeComunicacionConElBanco canalComunicacion = new CanalDeComunicacionConElBanco();
-		assertNotNull(canalComunicacion);
+		assertNotNull(new CanalDeComunicacionConElBanco());
 	}
 	
 	@Test

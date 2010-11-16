@@ -21,8 +21,7 @@ public class TarjetaOperacionesTest extends CajeroTest {
 	
 	@Test
 	public void crearTarjetaOperaciones() throws Exception {
-		TarjetaOperaciones tarjetaOperaciones = new TarjetaOperaciones(null);
-		assertNotNull(tarjetaOperaciones);
+		assertNotNull(new TarjetaOperaciones(null));
 	}
 	
 	@Test
