@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class CardTest extends TpvTest {
+public class TarjetaTest extends TpvTest {
 
-	private static final Card ALICIA_CARD = new Card(ALICIA_PIN);
+	private static final Tarjeta ALICIA_CARD = new Tarjeta(ALICIA_PIN);
 	
 	@Test
 	public void createCard() throws Exception {

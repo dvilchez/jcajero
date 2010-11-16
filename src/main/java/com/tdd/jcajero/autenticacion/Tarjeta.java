@@ -1,11 +1,11 @@
 package com.tdd.jcajero.autenticacion;
 
 
-public class Card {
+public class Tarjeta {
 
 	private final Pin pin;
 	
-	public Card(Pin pin) {
+	public Tarjeta(Pin pin) {
 		this.pin = pin;
 	}
 	

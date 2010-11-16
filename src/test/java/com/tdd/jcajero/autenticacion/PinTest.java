@@ -14,7 +14,7 @@ public class PinTest extends TpvTest {
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void createInvalidPin() throws Exception {
-		new Pin(new Digit(7), new Digit(-6), new Digit(4), new Digit(3));
+		new Pin(new Digito(7), new Digito(-6), new Digito(4), new Digito(3));
 	}
 
 	

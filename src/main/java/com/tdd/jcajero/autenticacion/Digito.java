@@ -1,14 +1,14 @@
 package com.tdd.jcajero.autenticacion;
 
 
-public class Digit {
+public class Digito {
 
 	private static final int MIN_DIGIT = 0;
 	private static final int MAX_DIGIT = 9;
 
 	private final int digit;
 	
-	public Digit(int digit) {
+	public Digito(int digit) {
 		if (digit < MIN_DIGIT || digit > MAX_DIGIT) {
 			throw new IllegalArgumentException();
 		}
@@ -29,7 +29,7 @@ public class Digit {
 		if (this == obj) return true;
 		if (obj == null) return false;
 		if (getClass() != obj.getClass()) return false;
-		Digit other = (Digit)obj;
+		Digito other = (Digito)obj;
 		if (digit != other.digit) return false;
 		return true;
 	}

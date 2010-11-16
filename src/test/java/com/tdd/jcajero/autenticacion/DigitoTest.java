@@ -5,31 +5,31 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class DigitTest {
+public class DigitoTest {
 
 	@Test
 	public void createValidDigit() throws Exception {
-		assertNotNull(new Digit(4));
+		assertNotNull(new Digito(4));
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void createDigitLessThan0() throws Exception {
-		new Digit(-1);
+		new Digito(-1);
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void createDigitGreaterThan9() throws Exception {
-		new Digit(10);
+		new Digito(10);
 	}
 	
 	@Test
 	public void compareEqualsDigits() throws Exception {
-		assertTrue(new Digit(5).equals(new Digit(5)));
+		assertTrue(new Digito(5).equals(new Digito(5)));
 	}
 	
 	@Test
 	public void caompareDifferentDigits() throws Exception {
-		assertFalse(new Digit(5).equals(new Digit(7)));
+		assertFalse(new Digito(5).equals(new Digito(7)));
 	}
 
 }
