@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class PinTest extends TpvTest {
+public class PinTest extends CajeroTest {
 
 	@Test
 	public void createPin() throws Exception {
