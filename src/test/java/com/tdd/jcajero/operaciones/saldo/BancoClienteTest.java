@@ -22,8 +22,7 @@ public class BancoClienteTest extends CajeroTest {
 
 	@Test
 	public void crearBancoCliente() throws Exception {
-		BancoCliente bancoCliente = new BancoCliente(null);
-		assertNotNull(bancoCliente);
+		assertNotNull(new BancoCliente(null));
 	}
 	
 	@Test

@@ -12,8 +12,7 @@ public class SaldoTest {
 
 	@Test
 	public void crearSaldo() throws Exception {
-		Saldo saldo = new Saldo(666);
-		assertNotNull(saldo);
+		assertNotNull(new Saldo(666));
 	}
 	
 }
