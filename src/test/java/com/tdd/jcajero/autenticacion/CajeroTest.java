@@ -1,7 +1,5 @@
 package com.tdd.jcajero.autenticacion;
 
-import static org.junit.Assert.assertNotNull;
-
 import org.junit.Test;
 
 import com.tdd.jcajero.operaciones.saldo.Saldo;
@@ -13,6 +11,8 @@ public abstract class CajeroTest {
 	protected static final Pin ERNESTO_PIN = new Pin(new Digito(5), new Digito(9), new Digito(5), new Digito(4));
 
 	protected static final Saldo SALDO_DE_ALICIA = new Saldo(2000);
+	
+	protected static final Tarjeta ALICIA_TARJETA = new Tarjeta(ALICIA_PIN, new Usuario("alice"));
 
 	@Test
 	public void aceptarTarjetaCorrecta() throws Exception {

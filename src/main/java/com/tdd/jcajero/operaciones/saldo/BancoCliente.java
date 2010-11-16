@@ -1,5 +1,7 @@
 package com.tdd.jcajero.operaciones.saldo;
 
+import com.tdd.jcajero.autenticacion.Pin;
+import com.tdd.jcajero.autenticacion.Tarjeta;
 import com.tdd.jcajero.autenticacion.TokenDeAutenticacion;
 
 public class BancoCliente implements Banco {
@@ -12,9 +14,16 @@ public class BancoCliente implements Banco {
 		this.canalComunicacion = canalComunicacion;
 	}
 	
-	@Override
 	public Saldo consultarSaldoPara() {
 		return canalComunicacion.consultarSaldoPara(tokenDeAutenticacion);
+	}
+
+	public boolean autenticarTarjeta(Tarjeta tarjeta, Pin pin){
+		tokenDeAutenticacion = canalComunicacion.autenticarTarjeta(tarjeta, pin);
+		if(tokenDeAutenticacion == null){
+			return false;
+		}
+		return true;
 	}
 
 }
