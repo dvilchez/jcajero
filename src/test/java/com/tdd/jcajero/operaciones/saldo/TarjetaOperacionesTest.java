@@ -5,12 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
-import com.tdd.jcajero.autenticacion.TpvTest;
+import com.tdd.jcajero.autenticacion.CajeroTest;
 import com.tdd.jcajero.operaciones.saldo.TarjetaOperaciones;
 import com.tdd.jcajero.operaciones.saldo.Saldo;
 
 
-public class TarjetaOperacionesTest extends TpvTest {
+public class TarjetaOperacionesTest extends CajeroTest {
 
 	private final Banco bancoDeAliciaMoqueado;
 	

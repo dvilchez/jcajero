@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.tdd.jcajero.autenticacion.CajeroTest;
 import com.tdd.jcajero.autenticacion.TokenDeAutenticacion;
-import com.tdd.jcajero.autenticacion.TpvTest;
 import static org.mockito.Mockito.*;
 
-public class BancoClienteTest extends TpvTest {
+public class BancoClienteTest extends CajeroTest {
 
 	@Test
 	public void crearBancoCliente() throws Exception {
