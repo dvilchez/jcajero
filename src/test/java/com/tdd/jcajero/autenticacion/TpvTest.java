@@ -1,5 +1,7 @@
 package com.tdd.jcajero.autenticacion;
 
+import com.tdd.jcajero.operaciones.saldo.Saldo;
+
 
 public abstract class TpvTest {
 
@@ -7,4 +9,5 @@ public abstract class TpvTest {
 
 	protected static final Pin ERNESTO_PIN = new Pin(new Digito(5), new Digito(9), new Digito(5), new Digito(4));
 
+	protected static final Saldo SALDO_DE_ALICIA = new Saldo(2000);
 }

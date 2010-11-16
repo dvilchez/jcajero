@@ -5,19 +5,18 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
+import com.tdd.jcajero.autenticacion.TpvTest;
 import com.tdd.jcajero.operaciones.saldo.TarjetaOperaciones;
 import com.tdd.jcajero.operaciones.saldo.Saldo;
 
 
-public class TarjetaOperacionesTest {
-
-	private static final Saldo SALDO_DE_ALICIA = new Saldo(2000);
+public class TarjetaOperacionesTest extends TpvTest {
 
 	private final Banco bancoDeAliciaMoqueado;
 	
 	public TarjetaOperacionesTest() {
 		bancoDeAliciaMoqueado = mock(Banco.class);
-		when(bancoDeAliciaMoqueado.consultarSaldoPara(any(TarjetaOperaciones.class))).thenReturn(SALDO_DE_ALICIA);
+		when(bancoDeAliciaMoqueado.consultarSaldoPara()).thenReturn(SALDO_DE_ALICIA);
 	}
 	
 	@Test

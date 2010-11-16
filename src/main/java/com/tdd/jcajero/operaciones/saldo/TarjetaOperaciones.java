@@ -10,7 +10,7 @@ public class TarjetaOperaciones {
 	}
 	
 	public Saldo saldo() {
-		return banco.consultarSaldoPara(this);
+		return banco.consultarSaldoPara();
 	}
 
 }
