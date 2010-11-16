@@ -4,6 +4,8 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import com.tdd.jcajero.cajero.CajeroTest;
+
 public class UsuarioTest extends CajeroTest{
 
 	@Test

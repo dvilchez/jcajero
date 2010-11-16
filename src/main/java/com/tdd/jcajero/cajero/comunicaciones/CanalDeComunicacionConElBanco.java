@@ -1,6 +1,7 @@
-package com.tdd.jcajero.operaciones.saldo;
+package com.tdd.jcajero.cajero.comunicaciones;
 
 import com.tdd.jcajero.autenticacion.TokenDeAutenticacion;
+import com.tdd.jcajero.banco.Saldo;
 
 
 public class CanalDeComunicacionConElBanco {

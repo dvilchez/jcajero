@@ -1,4 +1,4 @@
-package com.tdd.jcajero.operaciones.saldo;
+package com.tdd.jcajero.banco;
 
 
 public interface Banco {

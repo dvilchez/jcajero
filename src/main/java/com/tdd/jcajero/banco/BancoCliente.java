@@ -1,6 +1,7 @@
-package com.tdd.jcajero.operaciones.saldo;
+package com.tdd.jcajero.banco;
 
 import com.tdd.jcajero.autenticacion.TokenDeAutenticacion;
+import com.tdd.jcajero.cajero.comunicaciones.CanalDeComunicacionConElBanco;
 
 public class BancoCliente implements Banco {
 

@@ -1,10 +1,10 @@
-package com.tdd.jcajero.autenticacion;
+package com.tdd.jcajero.cajero;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.tdd.jcajero.operaciones.saldo.Efectivo;
+import com.tdd.jcajero.cajero.Efectivo;
 
 
 public class EfectivoTest {

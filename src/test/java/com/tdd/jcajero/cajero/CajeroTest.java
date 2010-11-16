@@ -1,4 +1,4 @@
-package com.tdd.jcajero.autenticacion;
+package com.tdd.jcajero.cajero;
 
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertNotNull;
@@ -6,9 +6,13 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.tdd.jcajero.operaciones.saldo.Cajero;
-import com.tdd.jcajero.operaciones.saldo.Efectivo;
-import com.tdd.jcajero.operaciones.saldo.Saldo;
+import com.tdd.jcajero.autenticacion.Digito;
+import com.tdd.jcajero.autenticacion.Pin;
+import com.tdd.jcajero.autenticacion.Tarjeta;
+import com.tdd.jcajero.autenticacion.Usuario;
+import com.tdd.jcajero.banco.Saldo;
+import com.tdd.jcajero.cajero.Cajero;
+import com.tdd.jcajero.cajero.Efectivo;
 
 public class CajeroTest {
 
