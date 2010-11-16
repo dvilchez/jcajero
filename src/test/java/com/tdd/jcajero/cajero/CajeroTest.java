@@ -1,7 +1,6 @@
 package com.tdd.jcajero.cajero;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertNotNull;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -23,6 +22,8 @@ public class CajeroTest {
 	protected static final Pin ERNESTO_PIN = new Pin(new Digito(5), new Digito(9), new Digito(5), new Digito(4));
 
 	protected static final Saldo SALDO_DE_ALICIA = new Saldo(2000);
+	
+	protected static final Tarjeta ALICIA_TARJETA = new Tarjeta(ALICIA_PIN, new Usuario("alice"));
 
 	@Ignore
 	@Test
