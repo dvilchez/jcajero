@@ -38,7 +38,7 @@ public class CajeroTest {
 	}
 
 	@Test
-	public void consultarEfectivoEnCajeroSinEfectivo() throws Exception {
+	public void consultarEfectivoEnCajeroConEfectivoCero() throws Exception {
 		Cajero cajero = new Cajero();
 		assertEquals(new Efectivo(0), cajero.efectivo());
 	}
@@ -50,4 +50,17 @@ public class CajeroTest {
 		assertEquals(new Efectivo(EFECTIVO_INICIAL_DEL_CAJERO), cajero.efectivo());
 	}
 	
+	@Test
+	public void tieneEfectivoParaUnaCantidad() throws Exception {
+		Cajero cajero = new Cajero();
+		cajero.reponerEfectivoConCantidad(EFECTIVO_INICIAL_DEL_CAJERO);
+		assertTrue(cajero.tieneEfectivoParaLaCantidad(80));
+	}
+
+	@Test
+	public void noTieneEfectivoParaUnaCantidad() throws Exception {
+		Cajero cajero = new Cajero();
+		assertFalse(cajero.tieneEfectivoParaLaCantidad(80));
+	}
+
 }

@@ -23,4 +23,9 @@ public class EfectivoTest {
 	public void comparaEfectivosIguales() throws Exception {
 		assertTrue(new Efectivo(6000).equals(new Efectivo(6000)));
 	}
+	
+	@Test
+	public void comprobarUnEfectivoMayorQueOtro() throws Exception {
+		assertTrue(new Efectivo(6000).mayorOIgualQue(new Efectivo(3000)));
+	}
 }

@@ -13,5 +13,9 @@ public class Cajero {
 	public void reponerEfectivoConCantidad(int cantidad) {
 		efectivo = new Efectivo(cantidad);
 	}
+
+	public boolean tieneEfectivoParaLaCantidad(int cantidad) {
+		return efectivo.mayorOIgualQue(new Efectivo(cantidad));
+	}
 	
 }

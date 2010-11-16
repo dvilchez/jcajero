@@ -31,4 +31,8 @@ public class Efectivo {
 		return true;
 	}
 
+	public boolean mayorOIgualQue(Efectivo otroEfectivo) {
+		return cantidad >= otroEfectivo.cantidad;
+	}
+
 }
